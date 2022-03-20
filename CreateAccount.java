@@ -6,17 +6,17 @@ public class CreateAccount
 {
 		public static void main(String[] args) 
 		{
-1			WebElement signUpButton = driver.findElement(By.xpath(“//*[@class="nav-link" and text()="Sign up"]”));
+			WebElement signUpButton = driver.findElement(By.xpath(“//*[@class="nav-link" and text()="Sign up"]”));
 			WebElement username = driver.findElement(By.xpath(“//*[@class="form-control form-control-lg" and @placeholder='Username']”));
 			WebElement email = driver.findElement(By.xpath(“//*[@class="form-control form-control-lg" and @placeholder='Email']”));
 			WebElement password = driver.findElement(By.xpath(“//*[@class="form-control form-control-lg" and @placeholder='Email']”));
 			WebElement signIn = driver.findElement(By.xpath(“//*[@class="btn btn-lg btn-primary pull-xs-right" and text()="Sign in"]”));
 			WebElement userInfo = driver.findElement(By.xpath(“//*[@class="nav-link" and text()='automationtest123']”));
 				
-			string url = "https://react-redux.realworld.io/";
-			string username = "TEST";
-			string email = "auto@dummy.com"
-			string password = "Password";
+			String url = "https://react-redux.realworld.io/";
+			String username = "TEST";
+			String email = "auto@dummy.com";
+			String password = "Password";
 
 			//Setting the driver executable
 			System.setProperty("webdriver.chrome.driver", ".\\Driver\\chromedriver.exe");
